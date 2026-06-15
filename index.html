@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Södermannen – Mark & Bygganläggning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="main-nav">
+      <a href="#" class="nav-logo">
+        <img src="image/logo-black.png" alt="Södermannen" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#om-oss">Om oss</a></li>
+        <li><a href="#tjanster">Tjänster</a></li>
+        <li><a href="#projekt">Projekt</a></li>
+        <li><a href="#kontakt" class="nav-cta">Kontakta oss</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Öppna meny">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO SLIDESHOW -->
+    <section class="hero" id="hero">
+      <div class="slides" id="slides">
+        <!-- Slide 1 – byt ut .slide-bg style mot riktiga bilder -->
+        <div class="slide active">
+          <div
+            class="slide-bg"
+            style="
+              background-image: linear-gradient(
+                155deg,
+                #2a3d2b 0%,
+                #1a1a18 65%
+              );
+            "
+          ></div>
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <p class="slide-eyebrow">Mark & Bygganläggning · Sörmland</p>
+            <h1 class="slide-title">
+              Vi formar<br /><em>marken</em><br />för framtiden
+            </h1>
+            <p class="slide-sub">
+              Södermannen utför markarbeten, schaktning och anläggningsprojekt
+              med hög kvalitet och precision – från idé till färdigt resultat.
+            </p>
+            <a href="#kontakt" class="hero-btn">Begär offert</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <div
+            class="slide-bg"
+            style="
+              background-image: linear-gradient(
+                155deg,
+                #3b2f1a 0%,
+                #1a1a18 65%
+              );
+            "
+          ></div>
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <p class="slide-eyebrow">Erfarenhet du kan lita på</p>
+            <h1 class="slide-title">Kompetens<br />på <em>djupet</em></h1>
+            <p class="slide-sub">
+              Med gedigen erfarenhet av schaktning, grundläggning och
+              markarbeten levererar vi varje projekt i tid och enligt
+              specifikation.
+            </p>
+            <a href="#projekt" class="hero-btn">Se våra projekt</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+          <div
+            class="slide-bg"
+            style="
+              background-image: linear-gradient(
+                155deg,
+                #1e2b3a 0%,
+                #1a1a18 65%
+              );
+            "
+          ></div>
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <p class="slide-eyebrow">Baserade i Nykvarn</p>
+            <h1 class="slide-title">
+              Lokala<br /><em>rötter</em> –<br />bred förmåga
+            </h1>
+            <p class="slide-sub">
+              Vi är ett sörmländskt företag med hjärtat i regionen och
+              kapaciteten att ta alla typer av markentreprenader.
+            </p>
+            <a href="#om-oss" class="hero-btn">Läs mer om oss</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button
+        class="slide-arrow slide-prev"
+        id="prev"
+        aria-label="Föregående bild"
+      >
+        &#8592;
+      </button>
+      <button class="slide-arrow slide-next" id="next" aria-label="Nästa bild">
+        &#8594;
+      </button>
+      <div class="slide-dots" id="dots">
+        <div class="dot active" data-idx="0"></div>
+        <div class="dot" data-idx="1"></div>
+        <div class="dot" data-idx="2"></div>
+      </div>
+    </section>
+
+    <!-- EARTH LINE -->
+    <div class="earth-line"></div>
+
+    <!-- OM OSS -->
+    <section id="om-oss">
+      <p class="section-eyebrow">Om Södermannen</p>
+      <h2 class="section-title">Markentreprenör<br />med hantverket i fokus</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Södermannen är ett markentreprenadföretag med bas i Nykvarn,
+            Sörmland. Vi specialiserar oss på mark- och anläggningsarbeten för
+            privatpersoner, företag och kommuner i regionen.
+          </p>
+          <p>
+            Med ett engagerat och kompetent team tar vi oss ann allt från mindre
+            markarbeten till komplexa anläggningsprojekt. Vi arbetar
+            strukturerat, med tydlig kommunikation och fokus på att leverera
+            rätt resultat – i tid och inom budget.
+          </p>
+          <p>
+            För oss är varje projekt unikt. Vi lyssnar, planerar noggrant och
+            genomför med den precision som yrket kräver. Det är så vi byggt upp
+            förtroendet hos våra kunder under åren.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-box">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Års erfarenhet</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Avslutade projekt</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Engagemang</div>
+          </div>
+          <!-- <div class="stat-box">
+            <div class="stat-number">5★</div>
+            <div class="stat-label">Kundnöjdhet</div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <div class="earth-line"></div>
+
+    <!-- TJÄNSTER -->
+    <section id="tjanster">
+      <p class="section-eyebrow">Vad vi gör</p>
+      <h2 class="section-title">Våra tjänster</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">⛏️</div>
+          <div class="service-name">Schaktning</div>
+          <div class="service-desc">
+            Markschaktning för byggnationer, kablar, ledningar och husgrunder.
+            Vi arbetar precist och effektivt.
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <div class="service-name">Grundläggning</div>
+          <div class="service-desc">
+            Förberedelse av mark inför husbyggnation, grundplattor och källare –
+            utfört med noggrannhet.
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛣️</div>
+          <div class="service-name">Vägbyggnad</div>
+          <div class="service-desc">
+            Anläggning av vägar, parkeringsytor och körbanor för industri,
+            bostäder och kommunal verksamhet.
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🌊</div>
+          <div class="service-name">VA-arbeten</div>
+          <div class="service-desc">
+            Schaktning och läggning av VA-ledningar, dagvatten, spillvatten och
+            dricksvatten.
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🪨</div>
+          <div class="service-name">Sprängning & Berg</div>
+          <div class="service-desc">
+            Bergsprängning och bearbetning av hårdmark vid byggnation och
+            anläggning.
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🌿</div>
+          <div class="service-name">Markiordningställande</div>
+          <div class="service-desc">
+            Iordningställande av tomter, återfyllning, finplanering och ytskikt
+            efter avslutade markarbeten.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="earth-line"></div>
+
+    <!-- PROJEKT -->
+    <section id="projekt">
+      <div class="project-intro">
+        <div>
+          <p class="section-eyebrow">Referensprojekt</p>
+          <h2 class="section-title">Vårt arbete i praktiken</h2>
+        </div>
+        <p class="gallery-note">Håll musen över bilden för info</p>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-item">
+          <div class="project-placeholder">
+            <span class="proj-ph-icon">📷</span>
+          </div>
+          <div class="project-overlay">
+            <div>
+              <div class="project-label">Schaktning Nykvarn</div>
+              <div class="project-location">Nykvarn, Södermanland</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-placeholder">
+            <span class="proj-ph-icon">📷</span>
+          </div>
+          <div class="project-overlay">
+            <div>
+              <div class="project-label">VA-ledning kommunprojekt</div>
+              <div class="project-location">Södertälje, 2023</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-placeholder">
+            <span class="proj-ph-icon">📷</span>
+          </div>
+          <div class="project-overlay">
+            <div>
+              <div class="project-label">Grundläggning villa</div>
+              <div class="project-location">Strängnäs, 2022</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-placeholder">
+            <span class="proj-ph-icon">📷</span>
+          </div>
+          <div class="project-overlay">
+            <div>
+              <div class="project-label">Vägbyggnad industri</div>
+              <div class="project-location">Nykvarn, 2023</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-placeholder">
+            <span class="proj-ph-icon">📷</span>
+          </div>
+          <div class="project-overlay">
+            <div>
+              <div class="project-label">Markiordningställande</div>
+              <div class="project-location">Mariefred, 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="upload-banner">
+        <strong>Tips:</strong> Byt ut bildplatserna ovan mot dina egna
+        projektfoton. Varje
+        <code>&lt;div class="project-placeholder"&gt;</code> kan ersättas med
+        <code
+          >&lt;img src="din-bild.jpg" class="project-img" alt="..."&gt;</code
+        >
+      </div>
+    </section>
+
+    <div class="earth-line"></div>
+
+    <!-- KONTAKT -->
+    <section id="kontakt">
+      <p class="section-eyebrow">Hör av dig</p>
+      <h2 class="section-title">Kontakta oss</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>Adress</h3>
+            <p>Skäggetorp 3<br />155 93 Nykvarn<br />Sverige</p>
+          </div>
+          <div class="contact-item">
+            <h3>E-post</h3>
+            <p><a href="mailto:info@sodermannen.se">info@sodermannen.se</a></p>
+          </div>
+          <div class="contact-item">
+            <h3>Webb</h3>
+            <p>
+              <a
+                href="https://www.sodermannen.se"
+                target="_blank"
+                rel="noopener"
+                >sodermannen.se</a
+              >
+            </p>
+          </div>
+          <div class="contact-item">
+            <h3>Öppettider</h3>
+            <p>Måndag–Fredag: 07:00–17:00<br />Helger: Efter överenskommelse</p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Namn</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="För- och efternamn"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="070 000 00 00"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-post</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="din@epost.se"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="type">Typ av ärende</label>
+            <select id="type" name="type">
+              <option value="">Välj ärendetyp...</option>
+              <option value="offert">Begär offert</option>
+              <option value="schaktning">Schaktning</option>
+              <option value="grundlaggning">Grundläggning</option>
+              <option value="va">VA-arbeten</option>
+              <option value="vagbyggnad">Vägbyggnad</option>
+              <option value="ovrig">Övrigt</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Beskriv ditt projekt</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Berätta gärna om projektets omfattning, plats och önskad tidplan..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Skicka förfrågan →</button>
+          <div class="form-success" id="form-success">
+            ✓ Tack för din förfrågan! Vi återkommer inom 1–2 arbetsdagar.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">
+        <img
+          src="assets/logo-black.png"
+          alt="Södermannen"
+          class="footer-logo-img"
+        />
+      </div>
+      <p class="footer-copy">
+        © 2024 Södermannen Mark &amp; Anläggning · Nykvarn
+      </p>
+      <p class="footer-copy">
+        <a
+          href="mailto:info@sodermannen.se"
+          style="color: inherit; text-decoration: none"
+          >info@sodermannen.se</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // ── Slideshow ──
+      const slides = document.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(".dot");
+      let current = 0;
+      let timer;
+
+      function goTo(idx) {
+        slides[current].classList.remove("active");
+        dots[current].classList.remove("active");
+        current = (idx + slides.length) % slides.length;
+        slides[current].classList.add("active");
+        dots[current].classList.add("active");
+      }
+
+      function startTimer() {
+        timer = setInterval(() => goTo(current + 1), 5000);
+      }
+      function resetTimer() {
+        clearInterval(timer);
+        startTimer();
+      }
+
+      document.getElementById("next").addEventListener("click", () => {
+        goTo(current + 1);
+        resetTimer();
+      });
+      document.getElementById("prev").addEventListener("click", () => {
+        goTo(current - 1);
+        resetTimer();
+      });
+      dots.forEach((dot) =>
+        dot.addEventListener("click", () => {
+          goTo(+dot.dataset.idx);
+          resetTimer();
+        }),
+      );
+
+      // Touch swipe
+      let touchStartX = 0;
+      document.querySelector(".hero").addEventListener("touchstart", (e) => {
+        touchStartX = e.touches[0].clientX;
+      });
+      document.querySelector(".hero").addEventListener("touchend", (e) => {
+        const diff = touchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 50) {
+          goTo(current + (diff > 0 ? 1 : -1));
+          resetTimer();
+        }
+      });
+
+      startTimer();
+
+      // ── Mobile nav ──
+      const nav = document.getElementById("main-nav");
+      document.getElementById("hamburger").addEventListener("click", () => {
+        nav.classList.toggle("mobile-nav-open");
+      });
+
+      // Close mobile nav on link click
+      document.querySelectorAll(".nav-links a").forEach((a) => {
+        a.addEventListener("click", () =>
+          nav.classList.remove("mobile-nav-open"),
+        );
+      });
+
+      // ── Contact form ──
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const btn = this.querySelector(".submit-btn");
+          btn.textContent = "Skickar...";
+          btn.disabled = true;
+          setTimeout(() => {
+            document.getElementById("form-success").style.display = "block";
+            btn.style.display = "none";
+            this.querySelectorAll("input, textarea, select").forEach(
+              (el) => (el.disabled = true),
+            );
+          }, 800);
+        });
+
+      // ── Scroll animations ──
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.style.opacity = "1";
+              e.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+
+      document
+        .querySelectorAll(
+          ".service-card, .stat-box, .project-item, .contact-item",
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(24px)";
+          el.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+          observer.observe(el);
+        });
+    </script>
+  </body>
+</html>
