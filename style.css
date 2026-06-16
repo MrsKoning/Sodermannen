@@ -741,6 +741,14 @@ footer {
   letter-spacing: 0.04em;
 }
 
+.footer-copy a {
+  color: var(--amber);
+}
+.footer-copy a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .about-grid {
