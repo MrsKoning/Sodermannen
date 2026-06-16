@@ -16,7 +16,7 @@
     <!-- NAV -->
     <nav id="main-nav">
       <a href="#" class="nav-logo">
-        <img src="image/logo-white.png" alt="Södermannen" class="logo-img" />
+        <img src="image/logo-white.png" alt="Södermännen" class="logo-img" />
       </a>
       <ul class="nav-links">
         <li><a href="#om-oss">Om oss</a></li>
@@ -32,33 +32,29 @@
     <!-- HERO SLIDESHOW -->
     <section class="hero" id="hero">
       <div class="slides" id="slides">
-        <!-- Slide 1 – byt ut .slide-bg style mot riktiga bilder -->
         <div class="slide active">
           <div class="slide-bg">
             <img src="image/hero2.jpg" alt="schaktning" />
           </div>
           <div class="slide-overlay"></div>
           <div class="slide-content">
-            <!-- <p class="slide-eyebrow">Mark & Bygganläggning · Sörmland</p> -->
             <h1 class="slide-title">
               Vi formar<br /><em>marken</em><br />för framtiden
             </h1>
             <p class="slide-sub">
-              Södermannen utför markarbeten, schaktning och anläggningsprojekt
+              Södermännen utför markarbeten, schaktning och anläggningsprojekt
               med hög kvalitet och precision – från idé till färdigt resultat.
             </p>
             <a href="#kontakt" class="hero-btn">Begär offert</a>
           </div>
         </div>
 
-        <!-- Slide 2 -->
         <div class="slide">
           <div class="slide-bg">
             <img src="image/Hero3.jpg" alt="schaktning" />
           </div>
           <div class="slide-overlay"></div>
           <div class="slide-content">
-            <!-- <p class="slide-eyebrow">Erfarenhet du kan lita på</p> -->
             <h1 class="slide-title">Kompetens<br />på <em>djupet</em></h1>
             <p class="slide-sub">
               Med gedigen erfarenhet av schaktning, grundläggning och
@@ -69,14 +65,12 @@
           </div>
         </div>
 
-        <!-- Slide 3 -->
         <div class="slide">
           <div class="slide-bg">
             <img src="image/medarbetare.jpg" alt="schaktning" />
           </div>
           <div class="slide-overlay"></div>
           <div class="slide-content">
-            <!-- <p class="slide-eyebrow">Baserade i Nykvarn</p> -->
             <h1 class="slide-title">
               Lokala<br /><em>rötter</em> –<br />bred förmåga
             </h1>
@@ -89,7 +83,6 @@
         </div>
       </div>
 
-      <!-- Controls -->
       <button
         class="slide-arrow slide-prev"
         id="prev"
@@ -107,14 +100,12 @@
       </div>
     </section>
 
-    <!-- EARTH LINE -->
     <div class="earth-line"></div>
 
     <!-- OM OSS -->
     <section id="om-oss">
       <p class="section-eyebrow">Om Södermannen</p>
       <h2 class="section-title">Markentreprenör<br />med hantverket i fokus</h2>
-
       <div class="about-grid">
         <div class="about-text">
           <p>
@@ -147,10 +138,6 @@
             <div class="stat-number">100%</div>
             <div class="stat-label">Engagemang</div>
           </div>
-          <!-- <div class="stat-box">
-            <div class="stat-number">5★</div>
-            <div class="stat-label">Kundnöjdhet</div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -161,7 +148,6 @@
     <section id="tjanster">
       <p class="section-eyebrow">Vad vi gör</p>
       <h2 class="section-title">Våra tjänster</h2>
-
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon">⛏️</div>
@@ -225,7 +211,6 @@
         </div>
         <p class="gallery-note">Håll musen över bilden för info</p>
       </div>
-
       <div class="project-grid">
         <div class="project-item">
           <div class="project-placeholder">
@@ -299,15 +284,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="upload-banner">
-        <strong>Tips:</strong> Byt ut bildplatserna ovan mot dina egna
-        projektfoton. Varje
-        <code>&lt;div class="project-placeholder"&gt;</code> kan ersättas med
-        <code
-          >&lt;img src="din-bild.jpg" class="project-img" alt="..."&gt;</code
-        >
-      </div> -->
     </section>
 
     <div class="earth-line"></div>
@@ -358,14 +334,20 @@
           </div>
           <div class="contact-item">
             <h3>Öppettider</h3>
-            <p>
-              Måndag–Torsdag: 07:00–17:00 <br />
-              Fredag: 07:00-13:00
-            </p>
+            <p>Måndag–Torsdag: 07:00–17:00 <br />Fredag: 07:00-13:00</p>
           </div>
         </div>
 
         <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="company">Företag</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Företagsnamn (valfritt)"
+            />
+          </div>
           <div class="form-row">
             <div class="form-group">
               <label for="name">Namn</label>
@@ -401,12 +383,12 @@
             <label for="type">Typ av ärende</label>
             <select id="type" name="type">
               <option value="">Välj ärendetyp...</option>
-              <option value="offert">Begär offert</option>
-              <option value="schaktning">Schaktning</option>
-              <option value="grundlaggning">Grundläggning</option>
-              <option value="va">VA-arbeten</option>
-              <option value="vagbyggnad">Vägbyggnad</option>
-              <option value="ovrig">Övrigt</option>
+              <option value="Offert">Begär offert</option>
+              <option value="Schaktning">Schaktning</option>
+              <option value="Grundläggning">Grundläggning</option>
+              <option value="VA-arbeten">VA-arbeten</option>
+              <option value="Vägbyggnad">Vägbyggnad</option>
+              <option value="Övrigt">Övrigt</option>
             </select>
           </div>
           <div class="form-group">
@@ -418,9 +400,24 @@
               required
             ></textarea>
           </div>
+          <div class="form-group form-checkbox">
+            <input
+              type="checkbox"
+              name="integritetspolicy"
+              id="integritetspolicy"
+              required
+            />
+            <label for="integritetspolicy">
+              Klicka i rutan om du godkänner vår
+              <a href="./integritetspolicy.html" target="_blank"
+                >integritetspolicy</a
+              >
+            </label>
+          </div>
           <button type="submit" class="submit-btn">Skicka förfrågan →</button>
-          <div class="form-success" id="form-success">
-            ✓ Tack för din förfrågan! Vi återkommer inom 1–2 arbetsdagar.
+          <div class="form-success" id="form-success" style="display: none">
+            ✓ Tack! Ditt e-postprogram öppnas nu med förfrågan färdig att
+            skicka.
           </div>
         </form>
       </div>
@@ -506,30 +503,113 @@
       document.getElementById("hamburger").addEventListener("click", () => {
         nav.classList.toggle("mobile-nav-open");
       });
-
-      // Close mobile nav on link click
       document.querySelectorAll(".nav-links a").forEach((a) => {
         a.addEventListener("click", () =>
           nav.classList.remove("mobile-nav-open"),
         );
       });
 
-      // ── Contact form ──
+      // ── Kontaktformulär: sessionStorage (bevara data vid länknavigering) ──
+      const formFields = [
+        "company",
+        "name",
+        "phone",
+        "email",
+        "type",
+        "message",
+      ];
+
+      // Återställ sparade värden när sidan laddas
+      formFields.forEach(function (id) {
+        const el = document.getElementById(id);
+        const saved = sessionStorage.getItem("form_" + id);
+        if (el && saved) el.value = saved;
+      });
+
+      // Spara värden löpande medan användaren skriver/väljer
+      formFields.forEach(function (id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.addEventListener("input", function () {
+          sessionStorage.setItem("form_" + id, el.value);
+        });
+        el.addEventListener("change", function () {
+          sessionStorage.setItem("form_" + id, el.value);
+        });
+      });
+
+      // ── Kontaktformulär → mailto ──
       document
         .getElementById("contact-form")
         .addEventListener("submit", function (e) {
           e.preventDefault();
-          const btn = this.querySelector(".submit-btn");
-          btn.textContent = "Skickar...";
-          btn.disabled = true;
-          setTimeout(() => {
-            document.getElementById("form-success").style.display = "block";
-            btn.style.display = "none";
-            this.querySelectorAll("input, textarea, select").forEach(
-              (el) => (el.disabled = true),
-            );
-          }, 800);
+
+          const foretag = document.getElementById("company").value.trim();
+          const namn = document.getElementById("name").value.trim();
+          const telefon = document.getElementById("phone").value.trim();
+          const epost = document.getElementById("email").value.trim();
+          const arende = document.getElementById("type").value.trim();
+          const meddelande = document.getElementById("message").value.trim();
+          const gdpr = document.getElementById("gdpr").checked;
+
+          // Validering
+          if (!namn || !epost || !meddelande) {
+            alert("Fyll i namn, e-post och meddelande innan du skickar.");
+            return;
+          }
+          if (!gdpr) {
+            alert("Du behöver godkänna integritetspolicyn för att skicka.");
+            return;
+          }
+
+          const avsandare = foretag ? foretag + " / " + namn : namn;
+
+          const subject = encodeURIComponent(
+            avsandare + (arende ? " – " + arende : ""),
+          );
+
+          const body = encodeURIComponent(
+            "Företag: " +
+              (foretag || "Ej angivet") +
+              "\n" +
+              "Namn: " +
+              namn +
+              "\n" +
+              "Telefon: " +
+              (telefon || "Ej angivet") +
+              "\n" +
+              "E-post: " +
+              epost +
+              "\n" +
+              "Ärendetyp: " +
+              (arende || "Ej vald") +
+              "\n\n" +
+              "Beskrivning:\n" +
+              meddelande,
+          );
+
+          window.location.href =
+            "mailto:info@sodermannen.se?subject=" + subject + "&body=" + body;
+
+          // Rensa sessionStorage efter skickat
+          formFields.forEach(function (id) {
+            sessionStorage.removeItem("form_" + id);
+          });
+
+          // Visa bekräftelse
+          document.getElementById("form-success").style.display = "block";
+          this.querySelector(".submit-btn").style.display = "none";
         });
+
+      // ── Scroll till formulär vid återkomst från integritetspolicy ──
+      if (sessionStorage.getItem("scrollTo") === "kontakt") {
+        sessionStorage.removeItem("scrollTo");
+        setTimeout(function () {
+          document
+            .getElementById("kontakt")
+            .scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
 
       // ── Scroll animations ──
       const observer = new IntersectionObserver(

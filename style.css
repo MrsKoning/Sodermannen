@@ -133,7 +133,6 @@ nav {
   opacity: 1;
 }
 
-/* Placeholder slide backgrounds (replace src= with real images) */
 .slide-bg {
   position: absolute;
   inset: 0;
@@ -456,7 +455,6 @@ section {
   font-style: italic;
 }
 
-/* Asymmetric masonry-like grid */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -507,7 +505,6 @@ section {
   transform: scale(1.05);
 }
 
-/* placeholder gradient for demo */
 .project-placeholder {
   width: 100%;
   height: 100%;
@@ -560,7 +557,6 @@ section {
   margin-top: 0.2rem;
 }
 
-/* Upload prompt banner */
 .upload-banner {
   margin-top: 1.5rem;
   padding: 1.2rem 1.8rem;
@@ -713,6 +709,38 @@ section {
   border-left: 3px solid var(--amber);
   color: var(--sand);
   font-size: 0.9rem;
+}
+
+/* ── GDPR-kryssruta ── */
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-top: 0.25rem;
+}
+.form-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  margin-top: 2px;
+  accent-color: var(--amber);
+  cursor: pointer;
+}
+.form-checkbox label {
+  font-size: 0.85rem;
+  color: rgba(245, 240, 232, 0.5);
+  line-height: 1.5;
+  cursor: pointer;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+.form-checkbox label a {
+  color: var(--amber);
+  text-decoration: underline;
+}
+.form-checkbox label a:hover {
+  color: var(--amber-light);
 }
 
 /* ── FOOTER ── */
