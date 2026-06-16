@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: "Anton", sans-serif;
+  font-family: "Inter", sans-serif;
   background: var(--sand);
   color: var(--dark);
   overflow-x: hidden;
@@ -41,7 +41,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
-  background: var(--white);
+  background: rgba(26, 26, 24, 0.96);
   backdrop-filter: blur(8px);
   border-bottom: 2px solid var(--amber);
 }
@@ -53,25 +53,9 @@ nav {
   text-decoration: none;
 }
 .logo-img {
-  height: 46px;
+  height: 56px;
   width: auto;
   display: block;
-}
-.nav-logo .logo-tagline {
-  font-family: "Anton", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: var(--black);
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin-left: 12px;
-  align-self: center;
-  display: none;
-}
-@media (min-width: 720px) {
-  .nav-logo .logo-tagline {
-    display: inline;
-  }
 }
 
 .nav-links {
@@ -80,12 +64,12 @@ nav {
   list-style: none;
 }
 .nav-links a {
-  font-family: "Anton", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--black);
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -134,17 +118,19 @@ nav {
 .slides {
   position: absolute;
   inset: 0;
-  display: flex;
-  transition: transform 0.9s cubic-bezier(0.77, 0, 0.18, 1);
 }
 
 .slide {
-  min-width: 100%;
-  height: 100%;
+  position: absolute;
+  inset: 0;
   background: var(--black);
-  position: relative;
   display: flex;
   align-items: flex-end;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+.slide.active {
+  opacity: 1;
 }
 
 /* Placeholder slide backgrounds (replace src= with real images) */
@@ -156,19 +142,15 @@ nav {
   transition: transform 8s ease;
   transform: scale(1.04);
 }
+
+.slide-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .slide.active .slide-bg {
   transform: scale(1);
-}
-
-/* demo gradient backgrounds simulating project photos */
-.slide:nth-child(1) .slide-bg {
-  background-image: linear-gradient(160deg, #2c3e2d 0%, #1a1a18 60%);
-}
-.slide:nth-child(2) .slide-bg {
-  background-image: linear-gradient(160deg, #3b2f1a 0%, #1a1a18 60%);
-}
-.slide:nth-child(3) .slide-bg {
-  background-image: linear-gradient(160deg, #1e2b3a 0%, #1a1a18 60%);
 }
 
 .slide-overlay {
@@ -189,7 +171,7 @@ nav {
 }
 
 .slide-eyebrow {
-  font-family: "Anton", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.22em;
@@ -199,7 +181,7 @@ nav {
 }
 
 .slide-title {
-  font-family: "Anton", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: clamp(2.8rem, 6vw, 5rem);
   line-height: 1;
@@ -213,7 +195,7 @@ nav {
 }
 
 .slide-sub {
-  font-family: "Anton", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(0.9rem, 1.5vw, 1.05rem);
   font-weight: 300;
   color: rgba(245, 240, 232, 0.8);
@@ -224,7 +206,7 @@ nav {
 
 .hero-btn {
   display: inline-block;
-  font-family: "Anton", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -333,7 +315,7 @@ section {
   margin-bottom: 0.8rem;
 }
 .section-title {
-  font-family: "Anton", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 3rem);
   text-transform: uppercase;
@@ -391,7 +373,7 @@ section {
   transform: scaleX(1);
 }
 .stat-number {
-  font-family: "Anton", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 2.8rem;
   font-weight: 700;
   color: var(--amber);
@@ -399,7 +381,7 @@ section {
   margin-bottom: 0.4rem;
 }
 .stat-label {
-  font-family: "Anton", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.78rem;
   font-weight: 400;
   color: rgba(245, 240, 232, 0.65);
@@ -441,7 +423,7 @@ section {
   margin-bottom: 1.2rem;
 }
 .service-name {
-  font-family: "Anton", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -564,7 +546,7 @@ section {
 }
 
 .project-label {
-  font-family: "Anton", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -612,7 +594,7 @@ section {
 }
 
 .contact-info h3 {
-  font-family: "Anton", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -705,7 +687,7 @@ section {
 
 .submit-btn {
   align-self: flex-start;
-  font-family: "Anton", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -746,7 +728,7 @@ footer {
 }
 
 .footer-logo-img {
-  height: 38px;
+  height: 46px;
   width: auto;
   display: block;
   filter: brightness(0) invert(1);

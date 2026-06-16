@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -16,7 +16,7 @@
     <!-- NAV -->
     <nav id="main-nav">
       <a href="#" class="nav-logo">
-        <img src="image/logo-black.png" alt="Södermannen" class="logo-img" />
+        <img src="image/logo-white.png" alt="Södermannen" class="logo-img" />
       </a>
       <ul class="nav-links">
         <li><a href="#om-oss">Om oss</a></li>
@@ -34,16 +34,9 @@
       <div class="slides" id="slides">
         <!-- Slide 1 – byt ut .slide-bg style mot riktiga bilder -->
         <div class="slide active">
-          <div
-            class="slide-bg"
-            style="
-              background-image: linear-gradient(
-                155deg,
-                #2a3d2b 0%,
-                #1a1a18 65%
-              );
-            "
-          ></div>
+          <div class="slide-bg">
+            <img src="image/hero2.jpg" alt="schaktning" />
+          </div>
           <div class="slide-overlay"></div>
           <div class="slide-content">
             <p class="slide-eyebrow">Mark & Bygganläggning · Sörmland</p>
@@ -60,16 +53,9 @@
 
         <!-- Slide 2 -->
         <div class="slide">
-          <div
-            class="slide-bg"
-            style="
-              background-image: linear-gradient(
-                155deg,
-                #3b2f1a 0%,
-                #1a1a18 65%
-              );
-            "
-          ></div>
+          <div class="slide-bg">
+            <img src="image/Hero3.jpg" alt="schaktning" />
+          </div>
           <div class="slide-overlay"></div>
           <div class="slide-content">
             <p class="slide-eyebrow">Erfarenhet du kan lita på</p>
@@ -85,16 +71,9 @@
 
         <!-- Slide 3 -->
         <div class="slide">
-          <div
-            class="slide-bg"
-            style="
-              background-image: linear-gradient(
-                155deg,
-                #1e2b3a 0%,
-                #1a1a18 65%
-              );
-            "
-          ></div>
+          <div class="slide-bg">
+            <img src="image/medarbetare.jpg" alt="schaktning" />
+          </div>
           <div class="slide-overlay"></div>
           <div class="slide-content">
             <p class="slide-eyebrow">Baserade i Nykvarn</p>
@@ -250,18 +229,22 @@
       <div class="project-grid">
         <div class="project-item">
           <div class="project-placeholder">
-            <span class="proj-ph-icon">📷</span>
+            <img src="image/shakt.jpg" class="project-img" alt="schaktning" />
           </div>
           <div class="project-overlay">
             <div>
               <div class="project-label">Schaktning Nykvarn</div>
-              <div class="project-location">Nykvarn, Södermanland</div>
+              <div class="project-location">Nykvarn, 2021</div>
             </div>
           </div>
         </div>
         <div class="project-item">
           <div class="project-placeholder">
-            <span class="proj-ph-icon">📷</span>
+            <img
+              src="image/Valedning.jpg"
+              class="project-img"
+              alt="VA-ledning"
+            />
           </div>
           <div class="project-overlay">
             <div>
@@ -272,29 +255,41 @@
         </div>
         <div class="project-item">
           <div class="project-placeholder">
-            <span class="proj-ph-icon">📷</span>
+            <img
+              src="image/Hero3.jpg"
+              class="project-img"
+              alt="Grundläggning"
+            />
           </div>
           <div class="project-overlay">
             <div>
-              <div class="project-label">Grundläggning villa</div>
-              <div class="project-location">Strängnäs, 2022</div>
+              <div class="project-label">Grundläggning industri</div>
+              <div class="project-location">Strängnäs, 2021</div>
             </div>
           </div>
         </div>
         <div class="project-item">
           <div class="project-placeholder">
-            <span class="proj-ph-icon">📷</span>
+            <img
+              src="image/asfaltering.jpg"
+              class="project-img"
+              alt="asfaltering"
+            />
           </div>
           <div class="project-overlay">
             <div>
               <div class="project-label">Vägbyggnad industri</div>
-              <div class="project-location">Nykvarn, 2023</div>
+              <div class="project-location">Nykvarn, 2021</div>
             </div>
           </div>
         </div>
         <div class="project-item">
           <div class="project-placeholder">
-            <span class="proj-ph-icon">📷</span>
+            <img
+              src="image/Plattläggning.jpg"
+              class="project-img"
+              alt="Plattläggning"
+            />
           </div>
           <div class="project-overlay">
             <div>
@@ -305,14 +300,14 @@
         </div>
       </div>
 
-      <div class="upload-banner">
+      <!-- <div class="upload-banner">
         <strong>Tips:</strong> Byt ut bildplatserna ovan mot dina egna
         projektfoton. Varje
         <code>&lt;div class="project-placeholder"&gt;</code> kan ersättas med
         <code
           >&lt;img src="din-bild.jpg" class="project-img" alt="..."&gt;</code
         >
-      </div>
+      </div> -->
     </section>
 
     <div class="earth-line"></div>
@@ -447,7 +442,7 @@
       }
 
       function startTimer() {
-        timer = setInterval(() => goTo(current + 1), 5000);
+        timer = setInterval(() => goTo(current + 1), 8000);
       }
       function resetTimer() {
         clearInterval(timer);
