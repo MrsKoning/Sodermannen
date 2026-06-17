@@ -732,6 +732,17 @@
         );
       });
 
+      // Stäng mobilmeny vid scroll
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (nav.classList.contains("mobile-nav-open")) {
+            nav.classList.remove("mobile-nav-open");
+          }
+        },
+        { passive: true },
+      );
+
       // ── Kontaktformulär: sessionStorage ──
       const formFields = [
         "company",
