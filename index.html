@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/logo-black.png" />
     <title>Södermännen – Markentreprenör i Nykvarn & Södertälje</title>
     <meta
       name="description"
@@ -443,85 +444,108 @@
 
     <!-- PROJEKT -->
     <section id="projekt">
-      <div class="project-intro">
-        <div>
-          <p class="section-eyebrow">Referensprojekt</p>
-          <h2 class="section-title">Vårt arbete i praktiken</h2>
+      <p class="section-eyebrow">Referensprojekt</p>
+      <h2 class="section-title">Vårt arbete i praktiken</h2>
+      <p class="proj-intro-text">
+        Vi är stolta över det vi bygger och gräver. Här är ett urval av våra
+        referensprojekt — från schaktning och grundläggning till VA-arbeten och
+        vägbyggnad runt om i Sörmland.
+      </p>
+
+      <div class="proj-slideshow" id="proj-slideshow">
+        <div class="proj-slide active">
+          <img
+            src="image/shakt.jpg"
+            alt="Schaktning Nykvarn"
+            class="proj-slide-img"
+          />
+          <div class="proj-slide-overlay">
+            <div class="project-label">Schaktning Nykvarn</div>
+            <div class="project-location">Nykvarn, 2021</div>
+          </div>
         </div>
-        <p class="gallery-note">Håll musen över bilden för info</p>
+
+        <div class="proj-slide">
+          <img
+            src="image/Valedning.jpg"
+            alt="VA-ledning kommunprojekt"
+            class="proj-slide-img"
+          />
+          <div class="proj-slide-overlay">
+            <div class="project-label">VA-ledning kommunprojekt</div>
+            <div class="project-location">Södertälje, 2023</div>
+          </div>
+        </div>
+
+        <div class="proj-slide">
+          <img
+            src="image/Hero3.jpg"
+            alt="Grundläggning industri"
+            class="proj-slide-img"
+          />
+          <div class="proj-slide-overlay">
+            <div class="project-label">Grundläggning industri</div>
+            <div class="project-location">Strängnäs, 2021</div>
+          </div>
+        </div>
+
+        <div class="proj-slide">
+          <img
+            src="image/asfaltering.jpg"
+            alt="Vägbyggnad industri"
+            class="proj-slide-img"
+          />
+          <div class="proj-slide-overlay">
+            <div class="project-label">Vägbyggnad industri</div>
+            <div class="project-location">Nykvarn, 2021</div>
+          </div>
+        </div>
+
+        <div class="proj-slide">
+          <img
+            src="image/Plattläggning.jpg"
+            alt="Markiordningställande"
+            class="proj-slide-img"
+          />
+          <div class="proj-slide-overlay">
+            <div class="project-label">Markiordningställande</div>
+            <div class="project-location">Mariefred, 2024</div>
+          </div>
+        </div>
+
+        <button
+          class="proj-arrow proj-prev"
+          id="proj-prev"
+          aria-label="Föregående bild"
+        >
+          &#8592;
+        </button>
+        <button
+          class="proj-arrow proj-next"
+          id="proj-next"
+          aria-label="Nästa bild"
+        >
+          &#8594;
+        </button>
+
+        <div class="proj-dots" id="proj-dots">
+          <div class="proj-dot active" data-idx="0"></div>
+          <div class="proj-dot" data-idx="1"></div>
+          <div class="proj-dot" data-idx="2"></div>
+          <div class="proj-dot" data-idx="3"></div>
+          <div class="proj-dot" data-idx="4"></div>
+        </div>
       </div>
-      <div class="project-grid">
-        <div class="project-item">
-          <div class="project-placeholder">
-            <img src="image/shakt.jpg" class="project-img" alt="schaktning" />
-          </div>
-          <div class="project-overlay">
-            <div>
-              <div class="project-label">Schaktning Nykvarn</div>
-              <div class="project-location">Nykvarn, 2021</div>
-            </div>
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-placeholder">
-            <img
-              src="image/Valedning.jpg"
-              class="project-img"
-              alt="VA-ledning"
-            />
-          </div>
-          <div class="project-overlay">
-            <div>
-              <div class="project-label">VA-ledning kommunprojekt</div>
-              <div class="project-location">Södertälje, 2023</div>
-            </div>
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-placeholder">
-            <img
-              src="image/Hero3.jpg"
-              class="project-img"
-              alt="Grundläggning"
-            />
-          </div>
-          <div class="project-overlay">
-            <div>
-              <div class="project-label">Grundläggning industri</div>
-              <div class="project-location">Strängnäs, 2021</div>
-            </div>
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-placeholder">
-            <img
-              src="image/asfaltering.jpg"
-              class="project-img"
-              alt="asfaltering"
-            />
-          </div>
-          <div class="project-overlay">
-            <div>
-              <div class="project-label">Vägbyggnad industri</div>
-              <div class="project-location">Nykvarn, 2021</div>
-            </div>
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-placeholder">
-            <img
-              src="image/Plattläggning.jpg"
-              class="project-img"
-              alt="Plattläggning"
-            />
-          </div>
-          <div class="project-overlay">
-            <div>
-              <div class="project-label">Markiordningställande</div>
-              <div class="project-location">Mariefred, 2024</div>
-            </div>
-          </div>
-        </div>
+
+      <div class="proj-fb">
+        <a
+          href="https://www.facebook.com/absodermannen"
+          target="_blank"
+          rel="noopener"
+          class="proj-fb-btn"
+        >
+          Se fler projekt på Facebook →
+        </a>
       </div>
     </section>
 
@@ -670,6 +694,7 @@
       </div>
       <p class="footer-copy">
         © 2024 Södermännen Mark &amp; Anläggning · Nykvarn
+        <a href="integritetspolicy.html">Integritetspolicy</a>
       </p>
       <p class="footer-copy">
         <a
@@ -847,6 +872,59 @@
           if (el) el.scrollIntoView({ behavior: "smooth" });
         }, 150);
       }
+
+      // ── Projekt slideshow ──
+      (function () {
+        const slides = document.querySelectorAll(".proj-slide");
+        const dots = document.querySelectorAll(".proj-dot");
+        let cur = 0,
+          timer;
+
+        function goTo(idx) {
+          slides[cur].classList.remove("active");
+          dots[cur].classList.remove("active");
+          cur = (idx + slides.length) % slides.length;
+          slides[cur].classList.add("active");
+          dots[cur].classList.add("active");
+        }
+        function start() {
+          timer = setInterval(() => goTo(cur + 1), 5000);
+        }
+        function reset() {
+          clearInterval(timer);
+          start();
+        }
+
+        document.getElementById("proj-next").addEventListener("click", () => {
+          goTo(cur + 1);
+          reset();
+        });
+        document.getElementById("proj-prev").addEventListener("click", () => {
+          goTo(cur - 1);
+          reset();
+        });
+        dots.forEach((d) =>
+          d.addEventListener("click", () => {
+            goTo(+d.dataset.idx);
+            reset();
+          }),
+        );
+
+        // Touch swipe
+        let tx = 0;
+        const ss = document.getElementById("proj-slideshow");
+        ss.addEventListener("touchstart", (e) => {
+          tx = e.touches[0].clientX;
+        });
+        ss.addEventListener("touchend", (e) => {
+          const diff = tx - e.changedTouches[0].clientX;
+          if (Math.abs(diff) > 50) {
+            goTo(cur + (diff > 0 ? 1 : -1));
+            reset();
+          }
+        });
+        start();
+      })();
 
       // ── Scroll animations ──
       const observer = new IntersectionObserver(
