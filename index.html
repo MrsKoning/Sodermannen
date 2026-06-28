@@ -773,6 +773,20 @@
         { passive: true },
       );
 
+      const serviceRows = document.querySelectorAll(".service-row");
+      const rowObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+              rowObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 },
+      );
+
+      serviceRows.forEach((row) => rowObserver.observe(row));
       // ── Kontaktformulär: sessionStorage ──
       const formFields = [
         "company",
@@ -932,7 +946,7 @@
         },
         { threshold: 0.12 },
       );
-      document.querySelectorAll(".stat-box, .contact-item").forEach((el) => {
+      document.querySelectorAll(".contact-item").forEach((el) => {
         el.style.opacity = "0";
         el.style.transform = "translateY(24px)";
         el.style.transition = "opacity 0.5s ease, transform 0.5s ease";
