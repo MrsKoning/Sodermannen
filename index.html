@@ -827,7 +827,9 @@
 
           const avsandare = foretag ? foretag + " / " + namn : namn;
           const subject = encodeURIComponent(
-            avsandare + (arende ? " – " + arende : ""),
+            "Meddelande från hemsidan – " +
+              avsandare +
+              (arende ? " – " + arende : ""),
           );
           const body = encodeURIComponent(
             "Företag: " +
