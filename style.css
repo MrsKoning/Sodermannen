@@ -354,44 +354,21 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
-.stat-box {
-  background: var(--black);
-  padding: 2rem 1.5rem;
+.about-image {
   position: relative;
   overflow: hidden;
-}
-.stat-box::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: var(--amber);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s ease;
-}
-.stat-box:hover::after {
-  transform: scaleX(1);
-}
-.stat-number {
-  font-family: "Oswald", sans-serif;
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: var(--amber);
-  line-height: 1;
-  margin-bottom: 0.4rem;
-}
-.stat-label {
-  font-family: "Inter", sans-serif;
-  font-size: 0.78rem;
-  font-weight: 400;
-  color: rgba(245, 240, 232, 0.82);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  height: 100%;
+  min-height: 380px;
 }
 
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(0.8) saturate(0.75);
+}
 /* ── TJÄNSTER ── */
 #tjanster {
   background: var(--black);
@@ -803,7 +780,30 @@ section {
   color: var(--sand);
   font-size: 0.9rem;
 }
+.contact-info--flagga {
+  position: relative;
+  overflow: hidden;
+  padding: 2.5rem;
+  border-radius: 2px;
+}
 
+.contact-info--flagga::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("image/Flagga.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.2) saturate(0.5);
+  z-index: 0;
+  mask-image: linear-gradient(to right, black 20%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 20%, transparent 100%);
+}
+
+.contact-info--flagga > * {
+  position: relative;
+  z-index: 1;
+}
 /* ── GDPR-kryssruta ── */
 .form-checkbox {
   display: flex;
